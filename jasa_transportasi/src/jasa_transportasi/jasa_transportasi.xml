@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data_sopir xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="jasa_transportasi.xsd">
+	<biodata>
+		<nama no_identitas="112001">Jhon</nama>
+		<jenis_kelamin>laki-laki</jenis_kelamin>
+		<asal>Medan</asal>
+		<no_hp code="+62">081210689244</no_hp>
+		<kendaraan>
+		<jurusan no.sim="11200001">Medan-Jakarta</jurusan>
+		<identitas_mobil plat="BK">Counter</identitas_mobil>
+		<maks_penumpang>30</maks_penumpang>
+		<maks_barang satuan="kg">70</maks_barang>
+		</kendaraan>
+	</biodata>
+	<biodata>
+		<nama no_identitas="112002">Herman</nama>
+		<jenis_kelamin>laki-laki</jenis_kelamin>
+		<asal>surabaya</asal>
+		<no_hp code="+62">081210689245</no_hp>
+		<kendaraan>
+		<jurusan no.sim="11200001">surabaya-medan</jurusan>
+		<identitas_mobil plat="DX">Counter</identitas_mobil>
+		<maks_penumpang>30</maks_penumpang>
+		<maks_barang satuan="kg">60</maks_barang>
+		</kendaraan>
+	</biodata>
+	<biodata>
+		<nama no_identitas="112005">Tomy</nama>
+		<jenis_kelamin>laki-laki</jenis_kelamin>
+		<asal>jakarta</asal>
+		<no_hp code="+62">08121068923</no_hp>
+		<kendaraan>
+		<jurusan no.sim="11200001">Medan-Jakarta</jurusan>
+		<identitas_mobil plat="D">Counter</identitas_mobil>
+		<maks_penumpang>30</maks_penumpang>
+		<maks_barang satuan="kg">60</maks_barang>
+		</kendaraan>
+	</biodata>
+	<biodata>
+		<nama no_identitas="112001">Rifa</nama>
+		<jenis_kelamin>laki-laki</jenis_kelamin>
+		<asal>tasikmalaya</asal>
+		<no_hp code="+62">08121068444</no_hp>
+		<kendaraan>
+		<jurusan no.sim="11200001">Tasikmalaya-jakarta</jurusan>
+		<identitas_mobil plat="D">Counter</identitas_mobil>
+		<maks_penumpang>30</maks_penumpang>
+		<maks_barang satuan="kg">60</maks_barang>
+		</kendaraan>
+	</biodata>
+	<biodata>
+		<nama no_identitas="1120033">Wady</nama>
+		<jenis_kelamin>laki-laki</jenis_kelamin>
+		<asal>bandung</asal>
+		<no_hp code="+62">08121068924</no_hp>
+		<kendaraan>
+		<jurusan no.sim="11200301">Bandung-Jakarta</jurusan>
+		<identitas_mobil plat="B">Counter</identitas_mobil>
+		<maks_penumpang>30</maks_penumpang>
+		<maks_barang satuan="kg">60</maks_barang>
+		</kendaraan>
+	</biodata>
+</Data_sopir> 

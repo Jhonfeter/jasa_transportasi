@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="Data_sopir">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="biodata"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="biodata">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nama"/>
+                <xs:element ref="jenis_kelamin"/>
+                <xs:element ref="asal"/>
+                <xs:element ref="no_hp"/>
+                <xs:element ref="kendaraan"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nama">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:NCName">
+                    <xs:attribute name="no_identitas" use="required" type="xs:integer"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="jenis_kelamin" type="xs:NCName"/>
+    <xs:element name="asal" type="xs:NCName"/>
+    <xs:element name="no_hp">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="code" use="required" type="xs:integer"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="kendaraan">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="jurusan"/>
+                <xs:element ref="identitas_mobil"/>
+                <xs:element ref="maks_penumpang" maxOccurs="30"/>
+                <xs:element ref="maks_barang" maxOccurs="60"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="jurusan">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:NCName">
+                    <xs:attribute name="no.sim" use="required" type="xs:integer"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="identitas_mobil">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:NCName">
+                    <xs:attribute name="plat" use="required" type="xs:NCName"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="maks_penumpang">
+    	<xs:simpleType>
+    		<xs:restriction base="xs:integer">
+
+
+    			<xs:maxInclusive value="30"></xs:maxInclusive>
+    			<xs:minInclusive value="1"></xs:minInclusive>
+    		</xs:restriction>
+    	</xs:simpleType>
+    </xs:element>
+    <xs:element name="maks_barang">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="satuan" use="required" type="xs:NCName"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
